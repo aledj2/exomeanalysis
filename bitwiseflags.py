@@ -9,9 +9,9 @@ bitflag={1:"template having multiple segments in sequencing", 2:"each segment pr
 
 
 def printflag(bitno):
-    print "bitflag="+str(bitno)+", "+'{0:012b}'.format(bitno)
-    print bitflag [bitno]
+    print "bitflag="+str(bitno)+", "+'{0:012b}'.format(int(bitno))
+    print bitflag [int(bitno)]
 
-printflag(2)
-#printflag(sys.argv[1])
+#printflag(2)
+printflag(sys.argv[1])
 
